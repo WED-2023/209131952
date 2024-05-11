@@ -7,11 +7,66 @@
 	/**background: white;**/
 }
 
-nav{
-	color: beige;
+.nav-link{
+	color: #f0f1be;
 	font-family: 'Trebuchet MS', sans-serif;
-	float: left;
-	width:150px;
-	height:500px;
 
 }
+
+.nav-link.clicked {
+	color: initial; /* Remove default color chnge after clicked */
+  }
+
+.nav-link:hover {
+	color: purple; 
+  }
+
+  nav ul {
+	list-style-type: none; /* Remove default bullet points */
+  }
+  
+  nav li::marker {
+	color: #f0f1be; /* Change color of the bullet points */
+  }
+
+  .titles{
+	font-family: 'Trebuchet MS', sans-serif;
+	color: #f0f1be;
+	font-size: 25px; /* Set the font size to 16 pixels */
+  	font-weight: bold; /* Make the text bold */
+	margin-left: 45%;
+  }
+
+  .like-button {
+	padding: 10px 20px; /* Adjust padding as needed */
+	font-size: 16px; /* Adjust font size as needed */
+	font-weight: bold; /* Make text bold */
+	color: #f0f1be; /* Text color */
+	background-color: #007bff; /* Background color */
+	border: none; /* Remove border */
+	border-radius: 5px; /* Add rounded corners */
+	cursor: pointer; /* Change cursor to pointer on hover */
+	transition: background-color 0.3s ease; /* Smooth transition */
+	margin-left: 48%;
+  }
+  
+  .like-button:hover {
+	background-color: #0056b3; /* Change background color on hover */
+  }
+
+  #thank-you-text{
+	color: #f0f1be; /* Adjust color as needed */
+  	display: none; /* Hide by default */
+  }
+    
+  .like-button:checked + #thank-you-text {
+	display: block; /* Show the "Thank you!" text when the checkbox is checked */
+  }
+
+  .texts{
+	font-family: 'Trebuchet MS', sans-serif;
+	color: #f0f1be;
+	font-size: 2px; /* Set the font size to 16 pixels */
+  	font-weight:200; /* Make the text bold */
+	margin-left: 45%;
+  }

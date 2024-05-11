@@ -10,20 +10,27 @@
   }
 </style>
 <title>It's Me Grandma Mimi!</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Like Button</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <div id="menu">
   <header>
-    <h1 style="color:aliceblue; margin-top: 30px; margin-left: 500px; font-family: 'Trebuchet MS', sans-serif;">Miriam Shemen</h1>
+    <h1 style="color:#f0f1be; margin-top: 30px; margin-left: 38%; font-family: 'Trebuchet MS', sans-serif;">Miriam Shemen</h1>
   </header>
   <nav>
-    <li><a href="#about">About Me</a></li>
-    <li><a href="#photos">My Photos</a></li>
-    <li><a href="#playlist">My Playlist</a></li>
-    <li><a href="#like">Like</a></li>
-    <li><a href="#qrcoder">QR code</a></li>
-    <li><a href="#spa">Q&A</a></li>
-    <li><a href="#contact">Contact Me</a></li>
+    <li><a class = "nav-link" href="#about">About Me</a></li>
+    <li><a class = "nav-link" href="#photos">My Photos</a></li>
+    <li><a class = "nav-link" href="#playlist">My Playlist</a></li>
+    <li><a class = "nav-link" href="#like">Like</a></li>
+    <li><a class = "nav-link" href="#qrcoder">QR code</a></li>
+    <li><a class = "nav-link" href="#spa">Q&A</a></li>
+    <li><a class = "nav-link" href="#contact">Contact Me</a></li>
     </div>
   </nav>
 		  
@@ -44,7 +51,7 @@
 <br/>
 <br/>
 <br/>
-about me
+<p class = "titles"> About me</p>
 <br/>
 <br/>
 <br/>
@@ -67,7 +74,7 @@ about me
 <br/>
 <br/>
 <br/>
-my photos
+<p class = "titles">My photos</p>
 <br/>
 <br/>
 <br/>
@@ -90,7 +97,7 @@ my photos
 <br/>
 <br/>
 <br/>
-my playlist
+<p class = "titles">My playlist</p>
 <br/>
 <br/>
 <br/>
@@ -113,7 +120,9 @@ my playlist
 <br/>
 <br/>
 <br/>
-give me a like
+<p class = "titles">Give me a like</p>
+<button class="like-button">Like</button>
+<p id="thank-you-text" class="hidden">Thank you!</p>
 <br/>
 <br/>
 <br/>
@@ -136,7 +145,7 @@ give me a like
 <br/>
 <br/>
 <br/>
-scan my code
+<p class = "titles">Scan my code</p>
 <br/>
 <br/>
 <br/>
@@ -159,7 +168,8 @@ scan my code
 <br/>
 <br/>
 <br/>
-ans
+<p class = "titles">Answers</p>
+<p class = "texts">3 differences</p>
 <br/>
 <br/>
 <br/>
@@ -182,7 +192,7 @@ ans
 <br/>
 <br/>
 <br/>
-contact me
+<p class = "titles">Contact me</p>
 <br/>
 <br/>
 <br/>
