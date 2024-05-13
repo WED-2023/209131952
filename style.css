@@ -3,20 +3,19 @@
 	position: fixed;
 	width: 100%;
 	height: 35px;
-	margin-left: 30px
-	/**background: white;**/
 }
 .horizontal-nav {
 	list-style-type: none; /* Remove bullet points */
 	padding: 0; /* Remove default padding */
 	position: fixed; /* Fix the navigation menu at the top of the viewport */
-	top: 20px; /* Adjust the distance from the top */
-	left: 15%; /* Center the menu horizontally */
+	top: 70px; /* Adjust the distance from the top */
+	margin-left: 16%; /* Center the menu horizontally */
+	text-align: center
   }
   
   .horizontal-nav li {
 	display: inline-block; /* Display list items horizontally */
-	margin-right: 40px; /* Add some spacing between items */
+	margin-right: 60px; /* Add some spacing between items */
   }
 
 .nav-link{
@@ -30,7 +29,7 @@
   }
 
 .nav-link:hover {
-	color: purple; 
+	color: rgb(210, 183, 241); 
   }
 
   nav ul {
@@ -44,7 +43,7 @@
   .titles{
 	font-family: 'Trebuchet MS', sans-serif;
 	color: #f0f1be;
-	font-size: 25px; /* Set the font size to 16 pixels */
+	font-size: 25px; 
   	font-weight: bold; /* Make the text bold */
 	text-align: center;
   }
@@ -61,6 +60,7 @@
 	cursor: pointer; /* Change cursor to pointer on hover */
 	transition: background-color 0.3s ease; /* Smooth transition */
 	margin-left: 48%;
+	text-decoration: none; /* Remove underline */
   }
 
   
@@ -75,6 +75,7 @@
 	color: #f0f1be;
 	font-size: 16px; /* Set the font size to 16 pixels */
   }
+
   .mini_titles{
 	font-family: 'Trebuchet MS', sans-serif;
 	color: #f0f1be;
