@@ -46,11 +46,12 @@
 	color: #f0f1be;
 	font-size: 25px; /* Set the font size to 16 pixels */
   	font-weight: bold; /* Make the text bold */
-	margin-left: 45%;
+	text-align: center;
   }
 
   .like-button {
 	padding: 10px 20px; /* Adjust padding as needed */
+	font-family: 'Trebuchet MS', sans-serif;
 	font-size: 16px; /* Adjust font size as needed */
 	font-weight: bold; /* Make text bold */
 	color: #f0f1be; /* Text color */
@@ -61,19 +62,13 @@
 	transition: background-color 0.3s ease; /* Smooth transition */
 	margin-left: 48%;
   }
+
   
   .like-button:hover {
 	background-color: #0056b3; /* Change background color on hover */
   }
 
-  #thank-you-text{
-	color: #f0f1be; /* Adjust color as needed */
-  	display: none; /* Hide by default */
-  }
     
-  .like-button:checked + #thank-you-text {
-	display: block; /* Show the "Thank you!" text when the checkbox is checked */
-  }
 
   .texts{
 	font-family: 'Trebuchet MS', sans-serif;
@@ -88,4 +83,34 @@
 	margin-left: 5%;
 	text-decoration: underline;
 
+  }
+  .container {
+	max-width: 400px;
+	margin: 50px auto;
+	padding: 20px;
+	border: 3px solid #f0f1be;
+	border-radius: 5px;
+	border-style: groove;
+	max-height: 400px;
+  }
+  #email,
+  #message {
+	width: 100%;
+  }
+
+  .send-button{
+	padding: 10px 20px; /* Adjust padding as needed */
+	font-size: 16px; /* Adjust font size as needed */
+	font-weight: bold; /* Make text bold */
+	color: #f0f1be; /* Text color */
+	background-color: #2340b2; /* Background color */
+	border: none; /* Remove border */
+	border-radius: 5px; /* Add rounded corners */
+	cursor: pointer; /* Change cursor to pointer on hover */
+	transition: background-color 0.3s ease; /* Smooth transition */
+	margin-left: 48%;
+  }
+
+  .send-button:hover {
+	background-color: #74adea; /* Change background color on hover */
   }

@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" type="text/css" href="style.css" />
 <style>
   body {
@@ -21,7 +23,7 @@
 <body>
 <div id="menu">
   <header>
-    <h1 style="color:#f0f1be; margin-top: 30px; margin-left: 38%; font-family: 'Trebuchet MS', sans-serif;">🌸Miriam Shemen🌸</h1>
+    <h1 style="color:#f0f1be; margin-top: 30px; margin-left: 38%; font-family: 'Trebuchet MS', sans-serif;" 	style="text-align: center;">🌸Miriam Shemen🌸</h1>
   </header>
   <nav>
     <ul class = "horizontal-nav">
@@ -110,9 +112,9 @@
   <br/>
   <br/>
 <p class = "titles">🌸My playlist🌸</p>
+<p class = "texts" style="text-align: center">Growing up in Egypt with its rich culture - Abed ElHalim, Um Kultum, Warda and Fairuz are my among favorites</p>
 <br/>
-<br/>
-<br/>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL6SdJV8MOGk-9RodTv7JIAPBn6FQr1xmG" frameborder="0" allowfullscreen style="margin-left:28%"></iframe>
 <br/>
 <br/>
 <br/>
@@ -129,9 +131,8 @@
   <br/>
   <br/>
   <br/>
-<p class = "titles">🌸Give me a like🌸</p>
-<button class="like-button">Like</button>
-<p id="thank-you-text" class="hidden">Thank you!</p>
+<p class = "titles">🌸Give my Facebook profile picture a like🌸</p>
+<a href="https://www.facebook.com/photo/?fbid=2035906943109260&set=a.149711361728837&locale=he_IL" target="_blank" id="likeButton" class= "like-button">Like</a>
 <br/>
 <br/>
 <br/>
@@ -204,6 +205,14 @@
 <br/>
 <br/>
 <br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 </section>
 
 <section id="contact" class="section">
@@ -214,7 +223,39 @@
   <br/>
   <br/>
   <br/>
+  <br/>
+  <br/>
+  <br/>
 <p class = "titles">🌸Contact me🌸</p>
+<div class="container">
+  <p class="mini_titles">Contact Form</p>
+  <form id="contactForm">
+    <div>
+      <label for="email" class="texts">Your Email:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div>
+      <label for="message" class="texts">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+    </div>
+    <label for="smiley" class="texts">Choose a Smiley:</label>
+    <select id="smiley" name="smiley" onchange="addSmiley()" >
+      <option value="😊">😊</option>
+      <option value="😁">😁</option>
+      <option value="😎">😎</option>
+      <option value="😍">😍</option>
+      <option value="😂">😂</option>
+      <option value="😇">😇</option>
+      <option value="😋">😋</option>
+      <option value="😜">😜</option>
+      <option value="😏">😏</option>
+      <option value="😘">😘</option>
+    </select>
+    <br/>
+    <br/>
+    <button type="button" class="send-button" onclick="sendEmail()" style="margin-left: 160px;">Send</button>
+  </form>
+</div>
 <br/>
 <br/>
 <br/>
@@ -232,10 +273,41 @@ $(function(){
   });
 });
 </script>
+
 <script type="text/javascript">
  $(document).scroll(function() {
     $('#menu').toggle($(this).scrollTop()>1000)
  });​
  </script>
+
+<script>
+
+  function sendEmail() {
+      var email = document.getElementById('email').value;
+      var message = document.getElementById('message').value;
+      var smiley = document.getElementById('smiley').value;
+    // Check if email or message is empty
+      if (!email || !message) {
+          alert("Please fill in both the email and message fields.");
+          return; // Stop further execution
+      }
+      var subject = "Feedback from " + email;
+      var body = "Message: " + message + "\n\nSelected Smiley: " + smiley;
+
+      window.location.href = "mailto:your-email@example.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+  }
+
+
+  function addSmiley() {
+    var messageTextarea = document.getElementById('message');
+    var smileySelect = document.getElementById('smiley');
+    var selectedSmiley = smileySelect.options[smileySelect.selectedIndex].value;
+    messageTextarea.value += selectedSmiley;
+  }
+</script>
+
+
 </body>
 </html>
+
+
