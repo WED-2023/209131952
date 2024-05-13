@@ -6,6 +6,18 @@
 	margin-left: 30px
 	/**background: white;**/
 }
+.horizontal-nav {
+	list-style-type: none; /* Remove bullet points */
+	padding: 0; /* Remove default padding */
+	position: fixed; /* Fix the navigation menu at the top of the viewport */
+	top: 20px; /* Adjust the distance from the top */
+	left: 15%; /* Center the menu horizontally */
+  }
+  
+  .horizontal-nav li {
+	display: inline-block; /* Display list items horizontally */
+	margin-right: 40px; /* Add some spacing between items */
+  }
 
 .nav-link{
 	color: #f0f1be;
@@ -66,7 +78,14 @@
   .texts{
 	font-family: 'Trebuchet MS', sans-serif;
 	color: #f0f1be;
-	font-size: 2px; /* Set the font size to 16 pixels */
-  	font-weight:200; /* Make the text bold */
-	margin-left: 45%;
+	font-size: 16px; /* Set the font size to 16 pixels */
+  }
+  .mini_titles{
+	font-family: 'Trebuchet MS', sans-serif;
+	color: #f0f1be;
+	font-size: 20px; /* Set the font size to 16 pixels */
+  	font-weight:Bold; /* Make the text bold */
+	margin-left: 5%;
+	text-decoration: underline;
+
   }
