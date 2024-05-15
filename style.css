@@ -119,3 +119,11 @@
   .send-button:hover {
 	background-color: #74adea; /* Change background color on hover */
   }
+
+  .scrollable-cell {
+	width: 870px; /* Adjust width as needed */
+	height: 390px; /* Fixed height for the cell */
+	overflow: auto; /* Add scrollbar when content exceeds cell height */
+	border: 0px solid #ccc; /* Optional: Add border for visual clarity */
+  }
+
