@@ -49,6 +49,7 @@
 	width: 100%;
 	margin: 0; /* Ensure no margin around the section */
     padding: 0; /* Ensure no padding inside the section */
+	box-sizing: border-box;
   }
   .light_section{
 	background-color:  whitesmoke;
@@ -56,6 +57,7 @@
 	width: 100%;
 	margin: 0; /* Ensure no margin around the section */
     padding: 0; /* Ensure no padding inside the section */
+	box-sizing: border-box;
   }
 
 
