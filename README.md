@@ -11,7 +11,7 @@ My grandmother Miriam Shemen is a significant figure in my life. I am named afte
 
 ## Methods and structure :
 
-- The html file is divided to containers, that their design is defined in the css file
+- The html file is divided to sections, that their design is defined in the css file
 - In general, for uniformity and organization, there are design definitions for the text paragraphs and titles in the css file
 - The navigation menu is attached to the top of the page, and follows the user throw the whole browsing experience
 - In UI/UX design, light blue, which is the main color of the website, is attributed with calming and trustworthy qualities
