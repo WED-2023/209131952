@@ -9,10 +9,10 @@
 	list-style-type: none; /* Remove bullet points */
 	padding: 0; /* Remove default padding */
 	position: fixed; /* Fix the navigation menu at the top of the viewport */
-	top: 70px; /* Adjust the distance from the top */
-	margin-left: 16%; /* Center the menu horizontally */
+	top: 65px; /* Adjust the distance from the top */
 	text-align: center;
-	background-color:#f0f1be;
+	background-color:whitesmoke;
+	width: 100%; /* Make the menu span the entire width */
 
   }
   
@@ -22,8 +22,8 @@
   }
 
 .nav-link{
-	background-color:#f0f1be;
-	color:#007bff;
+	background-color:whitesmoke;
+	color:#89d0dd;
 	font-family: 'Trebuchet MS', sans-serif;
 
 }
@@ -33,7 +33,7 @@
   }
 
 .nav-link:hover {
-	color: rgb(210, 183, 241); 
+	color: rgb(232, 183, 241); 
   }
 
   nav ul {
@@ -41,17 +41,29 @@
   }
   
   nav li::marker {
-	color: #f0f1be; /* Change color of the bullet points */
+	color: whitesmoke; /* Change color of the bullet points */
   }
   .dark_section{
 	background-color:  #89d0dd;
-	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Adding a shadow effect */
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Adding a shadow effect */
+  }
+  .light_section{
+	background-color:  whitesmoke;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); /* Adding a shadow effect */
   }
 
 
-  .titles{
+  .light_titles{
 	font-family: 'Trebuchet MS', sans-serif;
-	color: #f0f1be;
+	color: whitesmoke;
+	font-size: 25px; 
+  	font-weight: bold; /* Make the text bold */
+	text-align: center;
+  }
+
+  .dark_titles{
+	font-family: 'Trebuchet MS', sans-serif;
+	color: #89d0dd;
 	font-size: 25px; 
   	font-weight: bold; /* Make the text bold */
 	text-align: center;
@@ -62,8 +74,8 @@
 	font-family: 'Trebuchet MS', sans-serif;
 	font-size: 16px; /* Adjust font size as needed */
 	font-weight: bold; /* Make text bold */
-	color: #007bff; /* Text color */
-	background-color: #f0f1be; /* Background color */
+	color:whitesmoke; /* Text color */
+	background-color:#007bff; /* Background color */
 	border: none; /* Remove border */
 	border-radius: 5px; /* Add rounded corners */
 	cursor: pointer; /* Change cursor to pointer on hover */
@@ -79,26 +91,41 @@
 
     
 
-  .texts{
+  .light_texts{
 	font-family: 'Trebuchet MS', sans-serif;
-	color: #f0f1be;
+	color: whitesmoke;
 	font-size: 16px; /* Set the font size to 16 pixels */
   }
 
-  .mini_titles{
+  .dark_texts{
 	font-family: 'Trebuchet MS', sans-serif;
-	color: #f0f1be;
+	color: #89d0dd;
+	font-size: 16px; /* Set the font size to 16 pixels */
+  }
+
+  .light_mini_titles{
+	font-family: 'Trebuchet MS', sans-serif;
+	color: whitesmoke;
+	font-size: 20px; /* Set the font size to 16 pixels */
+  	font-weight:Bold; /* Make the text bold */
+	margin-left: 5%;
+	text-decoration: underline;
+  }
+  .dark_mini_titles{
+	font-family: 'Trebuchet MS', sans-serif;
+	color: #89d0dd;
 	font-size: 20px; /* Set the font size to 16 pixels */
   	font-weight:Bold; /* Make the text bold */
 	margin-left: 5%;
 	text-decoration: underline;
 
   }
+
   .container {
 	max-width: 400px;
 	margin: 50px auto;
 	padding: 20px;
-	border: 3px solid #f0f1be;
+	border: 3px solid whitesmoke;
 	border-radius: 5px;
 	border-style: groove;
 	max-height: 400px;
@@ -126,7 +153,7 @@
   }
 
   .scrollable-cell {
-	width: 870px; /* Adjust width as needed */
+	width: auto; /* Adjust width as needed */
 	height: 390px; /* Fixed height for the cell */
 	overflow: auto; /* Add scrollbar when content exceeds cell height */
 	border: none
