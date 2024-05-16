@@ -12,8 +12,8 @@ This website contains information about my grandmother, photos, embeded link to 
 
 - The html file is divided to containers, that their design is defined in the css file
 - The navigation menu is attached to the top of the page, and follows the user throw the whole browsing experience
-- In UI/UX design, light blue is attributed with calming and trustworthy qualities, what made me choose this color scale for the website
-- 
+- In UI/UX design, light blue, which is the main color of the website, is attributed with calming and trustworthy qualities
+- In order to enable some features like open the email app in the computer to contact us, there was use in JavaScript
 
 
 ## Files:
@@ -21,6 +21,6 @@ This website contains information about my grandmother, photos, embeded link to 
 - `index.html`
 - `style.css`
 
-## Run APP:
+## Browse the site :
 - Use the link: https://wed-2023.github.io/209131952/
 
