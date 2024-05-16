@@ -46,10 +46,12 @@
   .dark_section{
 	background-color:  #89d0dd;
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Adding a shadow effect */
+	width: 100%;
   }
   .light_section{
 	background-color:  whitesmoke;
 	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); /* Adding a shadow effect */
+	width: 100%;
   }
 
 
@@ -165,3 +167,13 @@
     align-items: center; /* Vertically center the content */
 	border: none;
   }
+  .video-container {
+    display: flex;
+    justify-content: center;
+}
+
+
+img {
+    display: block; /* Ensures image behaves like a block element */
+    margin: 0 auto; /* Automatically centers the image horizontally within its container */
+}
