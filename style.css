@@ -52,17 +52,15 @@ body {
   .dark_section{
 	background-color:  #89d0dd;
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Adding a shadow effect */
-	width: 100%;
-	margin: 0; /* Ensure no margin around the section */
-    padding: 0; /* Ensure no padding inside the section */
+	margin: 0; 
+    padding: 0;
 	box-sizing: border-box;
   }
   .light_section{
 	background-color:  whitesmoke;
 	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); /* Adding a shadow effect */
-	width: 100%;
-	margin: 0; /* Ensure no margin around the section */
-    padding: 0; /* Ensure no padding inside the section */
+	margin: 0; 
+    padding: 0; 
 	box-sizing: border-box;
   }
 
@@ -84,14 +82,14 @@ body {
   }
 
   .like-button {
-	padding: 10px 20px; /* Adjust padding as needed */
+	padding: 10px 20px; 
 	font-family: 'Trebuchet MS', sans-serif;
-	font-size: 16px; /* Adjust font size as needed */
+	font-size: 16px; 
 	font-weight: bold; /* Make text bold */
 	color:whitesmoke; /* Text color */
 	background-color:#007bff; /* Background color */
 	border: none; /* Remove border */
-	border-radius: 5px; /* Add rounded corners */
+	border-radius: 5px; 
 	cursor: pointer; /* Change cursor to pointer on hover */
 	transition: background-color 0.3s ease; /* Smooth transition */
 	margin-left: 48%;
@@ -114,13 +112,13 @@ body {
   .dark_texts{
 	font-family: 'Trebuchet MS', sans-serif;
 	color: #89d0dd;
-	font-size: 16px; /* Set the font size to 16 pixels */
+	font-size: 16px; 
   }
 
   .light_mini_titles{
 	font-family: 'Trebuchet MS', sans-serif;
 	color: whitesmoke;
-	font-size: 20px; /* Set the font size to 16 pixels */
+	font-size: 20px; 
   	font-weight:Bold; /* Make the text bold */
 	margin-left: 5%;
 	text-decoration: underline;
@@ -128,7 +126,7 @@ body {
   .dark_mini_titles{
 	font-family: 'Trebuchet MS', sans-serif;
 	color: #89d0dd;
-	font-size: 20px; /* Set the font size to 16 pixels */
+	font-size: 20px; 
   	font-weight:Bold; /* Make the text bold */
 	margin-left: 5%;
 	text-decoration: underline;
@@ -136,7 +134,7 @@ body {
   }
 
   .container {
-	max-width: 400px;
+	width: 100%;
 	margin: 50px auto;
 	padding: 20px;
 	border: 3px solid whitesmoke;
@@ -144,21 +142,31 @@ body {
 	border-style: groove;
 	max-height: 400px;
   }
+  .contact_container{
+	width: 400px;
+	margin: 50px auto;
+	padding: 20px;
+	border: 3px solid whitesmoke;
+	border-radius: 5px;
+	border-style: groove;
+	max-height: 400px;
+  }
+
   #email,
   #message {
 	width: 100%;
   }
 
   .send-button{
-	padding: 10px 20px; /* Adjust padding as needed */
-	font-size: 16px; /* Adjust font size as needed */
+	padding: 10px 20px; 
+	font-size: 16px; 
 	font-weight: bold; /* Make text bold */
 	color: #f0f1be; /* Text color */
 	background-color: #2340b2; /* Background color */
 	border: none; /* Remove border */
 	border-radius: 5px; /* Add rounded corners */
 	cursor: pointer; /* Change cursor to pointer on hover */
-	transition: background-color 0.3s ease; /* Smooth transition */
+	transition: background-color 0.3s ease; 
 	margin-left: 48%;
   }
 
@@ -186,10 +194,12 @@ body {
 
 
 img {
-    display: block; /* Ensures image behaves like a block element */
+    display: block; 
     margin: 0 auto; /* Automatically centers the image horizontally within its container */
-	
 }
+.img:hover {
+	transform: scale(1.5); /* Increase scale on hover */
+  }
 
 table {
     width: 100%;
