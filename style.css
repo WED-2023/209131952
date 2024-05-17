@@ -188,9 +188,10 @@ body {
 img {
     display: block; /* Ensures image behaves like a block element */
     margin: 0 auto; /* Automatically centers the image horizontally within its container */
+	
 }
 
 table {
     width: 100%;
-    border-collapse: collapse;
 }
+
