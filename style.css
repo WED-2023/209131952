@@ -1,3 +1,9 @@
+body {
+    margin: 0;
+    padding: 0;
+	width: 100%;
+}
+
 #menu
 {
 	position: fixed;
@@ -33,7 +39,7 @@
   }
 
 .nav-link:hover {
-	color: rgb(232, 183, 241); 
+	color: rgb(233, 124, 252); 
   }
 
   nav ul {
@@ -161,7 +167,7 @@
   }
 
   .scrollable-cell {
-	width: auto; /* Adjust width as needed */
+	width: 100%; /* Adjust width as needed */
 	height: 390px; /* Fixed height for the cell */
 	overflow: auto; /* Add scrollbar when content exceeds cell height */
 	border: none
@@ -182,4 +188,9 @@
 img {
     display: block; /* Ensures image behaves like a block element */
     margin: 0 auto; /* Automatically centers the image horizontally within its container */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
 }
