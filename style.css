@@ -133,15 +133,6 @@ body {
 
   }
 
-  .container {
-	width: 100%;
-	margin: 50px auto;
-	padding: 20px;
-	border: 3px solid whitesmoke;
-	border-radius: 5px;
-	border-style: groove;
-	max-height: 400px;
-  }
   .contact_container{
 	width: 400px;
 	margin: 50px auto;
@@ -196,6 +187,7 @@ body {
 img {
     display: block; 
     margin: 0 auto; /* Automatically centers the image horizontally within its container */
+	max-width: 100%; /* Ensure images fit within their container */
 }
 .img:hover {
 	transform: scale(1.5); /* Increase scale on hover */
@@ -203,5 +195,14 @@ img {
 
 table {
     width: 100%;
+	table-layout: fixed; /* Use fixed layout for the table */
+	max-width: 100%; /* Limit table width to prevent overflow */
+	  
 }
+
+td {
+	max-width: 20%; /* Limit cell width to prevent overflow */
+	overflow: hidden; /* Hide content that may overflow */
+	text-align: center; /* Center-align text within cells */
+  }
 
